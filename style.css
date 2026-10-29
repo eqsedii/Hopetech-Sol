@@ -109,3 +109,13 @@ footer{background:#030816;color:var(--mut);padding:56px 0 24px;border-top:1px so
 
 @media(max-width:600px){.hero p{display:none}.hero h1{margin-bottom:14px}.hero .btn{padding:10px 20px;font-size:.92rem}}
 .scroll{display:none}.chipline{margin-top:16px}@media(max-width:700px){.chipline{display:none}}
+
+/* compact shop grid */
+#prodGrid{grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
+#prodGrid .prod .im{aspect-ratio:1/1}
+#prodGrid .prod .bd{padding:10px 12px 12px}
+#prodGrid .prod .cat{font-size:.7rem}
+#prodGrid .prod h3{font-size:.86rem;margin:2px 0 4px;line-height:1.25;min-height:2.5em}
+#prodGrid .prod .pr{font-size:.76rem;margin-bottom:8px}
+#prodGrid .prod .btn{padding:8px;font-size:.84rem}
+@media(max-width:600px){#prodGrid{grid-template-columns:repeat(2,1fr);gap:10px}#prodGrid .prod h3{font-size:.8rem}}
